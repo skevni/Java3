@@ -4,32 +4,20 @@ import java.util.ArrayList;
 
 public class Box<T extends Fruit> {
     ArrayList<T> box;
-    T content;
+
 
     // пустая коробка
     public Box() {
         this.box = new ArrayList<>();
     }
-
-    // заполняем количеством фруктов
-    public Box(T content, int count) {
-        this.content = content;
+    // заполненная фруктом
+    public Box(T fruit) {
         this.box = new ArrayList<>();
-
-        for (int i = 0; i < count; i++) {
-            this.box.add(content);
-        }
-
-    }
-
-    public void addFruit(int count) {
-        for (int i = 0; i < count; i++) {
-            box.add(content);
-        }
+        this.box.add(fruit);
     }
 
     public void addFruit(T fruit) {
-        box.add(content);
+        box.add(fruit);
     }
 
     public double getWeight() {

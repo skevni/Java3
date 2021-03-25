@@ -2,7 +2,9 @@ package ru.geekbrains.sklyarov.java3core.homework1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-
+/*
+Задание не нужно былопонимать буквально и делать обощенным весь класс, можно было ограничиться только лишь статическим обощенным методом в лассе main
+* */
 public class SomeArray<T> {
     private final T[] array;
 
